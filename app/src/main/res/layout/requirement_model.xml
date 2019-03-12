@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/gray_border">
+
+    <RelativeLayout
+        android:id="@+id/layout_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/iv_productimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/logo_icon"
+            android:layout_margin="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/layout_image">
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:text="I want like this"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/tv_description"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray">
+        </View>
+
+        <LinearLayout
+            android:id="@+id/layout_tagsrow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_below="@+id/view_line"
+            >
+            
+            <RelativeLayout
+                android:id="@+id/layout_tag1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_rect_gray">
+                <TextView
+                    android:id="@+id/tv_tag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@android:color/black"
+                    android:text="bags"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layout_tag2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_rect_gray">
+                <TextView
+                    android:id="@+id/tv_tag2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@android:color/black"
+                    android:text="bags"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_tagsrow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_below="@+id/layout_tagsrow1"
+            >
+
+            <RelativeLayout
+                android:id="@+id/layout_tag3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_rect_gray">
+                <TextView
+                    android:id="@+id/tv_tag3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@android:color/black"
+                    android:text="bags"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layout_tag4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_rect_gray">
+                <TextView
+                    android:id="@+id/tv_tag4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@android:color/black"
+                    android:text="bags"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_tagsrow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_below="@+id/layout_tagsrow2"
+            >
+
+            <RelativeLayout
+                android:id="@+id/layout_tag5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_rect_gray">
+                <TextView
+                    android:id="@+id/tv_tag5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@android:color/black"
+                    android:text="bags"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layout_tag6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_rect_gray">
+                <TextView
+                    android:id="@+id/tv_tag6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@android:color/black"
+                    android:text="bags"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@mipmap/bg_profile">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loan Request"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:textColor="@android:color/white"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Enter Your Email"
+            android:inputType="textEmailAddress"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray">
+        </View>
+
+        <EditText
+            android:id="@+id/et_mobilenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Enter Mobile Number"
+            android:inputType="number"
+            android:layout_margin="10dp"
+            android:maxLength="10"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray">
+        </View>
+
+        <EditText
+            android:id="@+id/et_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Enter Your Required Amount(Rs)"
+            android:inputType="number"
+            android:layout_margin="10dp"
+            android:maxLength="10"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray">
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/layout_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorOrangebutton">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/white"
+                android:text="SUBMIT"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

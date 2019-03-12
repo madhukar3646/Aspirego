@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "80517018499",
+    "firebase_url": "https://aspire-go.firebaseio.com",
+    "project_id": "aspire-go",
+    "storage_bucket": "aspire-go.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80517018499:android:12ff4da326462e5f",
+        "android_client_info": {
+          "package_name": "com.m.aspirego"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "80517018499-jdoj0abkfp05agccalhnm4fh5k7fdq4r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.m.aspirego",
+            "certificate_hash": "30e136aad44195f0f1e563c160dcdcd78b12a733"
+          }
+        },
+        {
+          "client_id": "80517018499-qi860auubgvn8jhl5b494li8iclsea5f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCydCBrLZhiIEdOOEeTIbTC4-ke0Kb9Ddw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "80517018499-qi860auubgvn8jhl5b494li8iclsea5f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

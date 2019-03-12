@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".merchant_module.activities.MapsActivity" >
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:orientation="horizontal"
+    android:background="@color/colorOrangebutton"
+    >
+        <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/choose_add"
+    android:padding="@dimen/back_btn_padding"
+            android:layout_weight="1"
+    android:textColor="@android:color/white"
+    android:textSize="20dp"
+    />
+    <ImageView
+        android:id="@+id/iv_search"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:src="@mipmap/search_icon"
+        android:layout_marginRight="5dp"
+        />
+    <TextView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center"
+        android:text="OK"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:onClick="saveAdd"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        />
+
+</LinearLayout>
+    <TextView
+        android:id="@+id/lat_lan_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Address"
+        android:maxLines="2"
+        android:minLines="2"
+        android:padding="@dimen/back_btn_padding"
+
+        />
+    </LinearLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/title_layout"
+    >
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_place_24dp"
+        android:layout_marginBottom="25dp"
+
+        />
+
+</FrameLayout>
+
+
+</RelativeLayout>

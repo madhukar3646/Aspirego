@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Aspire Go</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rs">\u20B9</string>
+    <string name="viewall">view full news</string>
+    <string name="change_password">change password</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="reenter_password">Re-enter Password</string>
+    <string name="mobile_number">Enter Mobile Number</string>
+    <string name="reset_password">reset password</string>
+    <string name="title">Hyderabad Market</string>
+    <string name="title_activity_direction">Map</string>
+    <string name="user">User</string>
+    <string name="merchant">Merchant</string>
+    <string name="upload_photo">Uploade Photo</string>
+    <string name="product_name">Product Name</string>
+    <string name="submit">SUBMIT</string>
+    <string name="address">Address</string>
+    <string name="area">Area</string>
+    <string name="enter_offer">Enter Offer Price</string>
+    <string name="enter_price">Enter Price</string>
+    <string name="offer_from">Offer From</string>
+    <string name="offer_to">Offer To</string>
+    <string name="choose_add">Choose Address</string>
+    <string name="same_product">I have same product</string>
+    <string name="similar_product">I have similar product</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="facebook_app_id">491572721356470</string>
+    <string name="fb_login_protocol_scheme">fb491572721356470</string>
+    <string name="fcm_message">Hyderabad Market</string>
+    <string name="default_notification_channel_id">101</string>
+
+</resources>

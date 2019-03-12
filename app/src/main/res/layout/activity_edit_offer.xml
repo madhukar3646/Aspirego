@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".merchant_module.activities.EditOfferActivity">
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="1dp"
+            android:padding="@dimen/back_btn_padding"
+            android:src="@mipmap/back_icon"
+            android:background="@color/back_btn"
+            android:visibility="visible"
+            />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/back_btn"
+            android:layout_marginLeft="10dp"
+            android:text="ADD OFFFERS"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+    </RelativeLayout>
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_layout"
+        android:padding="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:dividerPadding="5dp"
+            android:showDividers="middle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:divider="@drawable/divider_line"
+            >
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                >
+                <RelativeLayout
+                    android:id="@+id/offer_image_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gray_border"
+                    android:padding="5dp"
+                    >
+                <ImageView
+                    android:id="@+id/offer_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/logo_icon"
+                    />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/offer_image_lay"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorOrangebutton"
+                    android:text="@string/upload_photo"
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp"
+                />
+
+            </RelativeLayout>
+<EditText
+    android:id="@+id/product_name_edt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/back_btn_padding"
+    android:textColor="@color/gray"
+    android:textSize="@dimen/midemun"
+    android:hint="@string/product_name"
+    android:gravity="center"
+    android:textColorHint="@color/txt_gray"
+    android:background="@android:color/white"
+    />
+            <EditText
+                android:id="@+id/price_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/back_btn_padding"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/midemun"
+                android:hint="@string/enter_price"
+                android:textColorHint="@color/txt_gray"
+                android:gravity="center"
+                android:background="@android:color/white"
+                />
+            <EditText
+                android:id="@+id/offer_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/back_btn_padding"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/midemun"
+                android:hint="@string/enter_offer"
+                android:gravity="center"
+                android:textColorHint="@color/txt_gray"
+                android:background="@android:color/white"
+                />
+            <EditText
+                android:id="@+id/from_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/back_btn_padding"
+                android:textColor="@color/txt_gray"
+                android:textSize="@dimen/midemun"
+                android:hint="@string/offer_from"
+                android:textColorHint="@color/txt_gray"
+                android:gravity="center"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:focusableInTouchMode="false"
+                />
+            <EditText
+                android:id="@+id/to_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/back_btn_padding"
+                android:textColor="@color/txt_gray"
+                android:textSize="@dimen/midemun"
+                android:hint="@string/offer_to"
+                android:textColorHint="@color/txt_gray"
+                android:gravity="center"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:focusableInTouchMode="false"
+                />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+            </android.support.v7.widget.AppCompatSpinner>
+           <!-- <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray">
+            </View>-->
+
+            <TextView
+                android:id="@+id/submit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorOrangebutton"
+                android:text="@string/submit"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/title"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

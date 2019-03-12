@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="1dp"
+            android:padding="@dimen/back_btn_padding"
+            android:src="@mipmap/back_icon"
+            android:background="@color/back_btn"
+            android:visibility="visible"
+            />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/back_btn"
+            android:layout_marginLeft="10dp"
+            android:text="Add Products"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_additem"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/title_layout"
+            >
+
+            <ImageView
+                android:id="@+id/iv_add"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/add_icon"
+                android:layout_alignParentRight="true"
+                />
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/iv_add"
+                android:theme="@style/Autocomplete"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:hint="Enter Product name"
+                >
+            </AutoCompleteTextView>
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_addproducts"
+        android:layout_below="@+id/layout_additem">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorHomerecyclerbg"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_addproducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/colorOrangebutton"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/white"
+            android:text="ADD PRODUCTS"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+</RelativeLayout>
