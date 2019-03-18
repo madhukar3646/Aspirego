@@ -1,0 +1,7 @@
+Aspire go:
+play store creds:
+aspirego19@gmail.com
+Sai@123456 
+
+key aleas: key0
+keystore passwords: android

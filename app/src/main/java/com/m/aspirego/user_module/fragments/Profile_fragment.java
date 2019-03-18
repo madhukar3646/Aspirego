@@ -138,7 +138,6 @@ public class Profile_fragment extends Fragment implements View.OnClickListener{
                         WRITE_EXTERNAL_STORAGE,
                         READ_EXTERNAL_STORAGE
                 }, 100);
-
     }
 
     @Override
